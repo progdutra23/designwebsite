@@ -5,6 +5,8 @@
       --primary-color: #fcfcfc; /* cor do texto */
       --houver-menu: #fde8e0; /* variação da cor do menu */
       --icon-color: #ff7214; /* cor dos icones */
+      --icone-tema: orange; /* cor unica do icone de tema */
+
 }
 
 :root[data-theme="light"] {
@@ -31,12 +33,94 @@ i{
     color: var(--icon-color);
 }
 
+/* reset CSS */
+
 * {
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
+/* fim do reset */
 
 img {
     width: 10rem;    /* largura */ 
     height: 10rem;   /* altura */ 
+}
+/* header */
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+
+/* .header-logo .logo */
+.logo {   /*  img */
+    width: 3.25rem; /* comprimento */
+    height: 3.25rem; /* altura */
+}
+
+/* area do icone */
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#toggleTheme{
+    color:var(--icone-tema);
+    font-size: 2rem ;
+    cursor: pointer;  /* aparencia do cursor */
+}
+
+.menu{ /* ul */
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg);
+    gap: 1rem;
+}
+
+.menu-item{
+    width: 100%;
+}
+
+.header-nav{
+    display: none;
+}
+
+/* menu mobile */
+
+.menu-mobile{
+    width: 100vw; /*  V W = Viewport width */
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #ff7214;
+}
+
+.menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsividade
+Responsivo */
+
+@media (min-width: 768px) {
+    #header {
+        position: fixed;
+        padding: 1rem 6rem;
+    }
+    .nav-mobile{
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+    }
+
 }
