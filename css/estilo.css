@@ -1,0 +1,42 @@
+:root,
+:root[data-theme="dark"] {
+      /* --cor-texto-primario: #fcfcfc; */
+      --primary-bg: #0a0a0a; /* bg background */ 
+      --primary-color: #fcfcfc; /* cor do texto */
+      --houver-menu: #fde8e0; /* variação da cor do menu */
+      --icon-color: #ff7214; /* cor dos icones */
+}
+
+:root[data-theme="light"] {
+      --primary-bg: #fcfcfc; /* bg background */ 
+      --primary-color: #0a0a0a; /* cor do texto */
+}
+
+body {
+    background: var(--primary-bg); /* cor do fundo */
+    color: var(--primary-color); /* cor do texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--houver-menu);
+}
+
+i{
+    color: var(--icon-color);
+}
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 10rem;    /* largura */ 
+    height: 10rem;   /* altura */ 
+}
