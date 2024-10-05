@@ -6,13 +6,14 @@
       --houver-menu: #fde8e0; /* variação da cor do menu */
       --icon-color: #ff7214; /* cor dos icones */
       --icone-tema: orange; /* cor unica do icone de tema */
+      --color-title: #ff7214; /* cor do titulo */
 
 }
 
 :root[data-theme="light"] {
       --primary-bg: #fcfcfc; /* bg background */ 
       --primary-color: #0a0a0a; /* cor do texto */
-      --houver-menu: #fcfcfc;
+      --houver-menu: #fcfcfc;  /* coro dos menus  */
 }
 
 /* css geral */
@@ -246,6 +247,62 @@ p{
     flex-direction: column;
     gap: 4rem;
 }
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-cover {   /*imagens dos projetos */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-title {       /* H3 */
+    font-size: 1.5rem;
+    color: var(--color-title);
+    font-weight:100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 6px;
+}
+
+.card-descricao {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-lista, .sobre-lista {  /* estrutura da lista  */
+    margin-left: 1.25rem;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.card-item, .sobre-item {  /* topicos da lista */
+    margin-top: 20px;
+    list-style: disc;
+}
+
+.card-button, .card-descricao{
+    display: flex;
+}
+
+.card-button .btn  {
+    padding: .65rem 1.25rem;
+    margin-top: 15px;
+}
+
+.card-button .btn span{
+    font-size: 1rem;
+
+}
+
+
+
 /*Responsividade /* Responsivo */
 
 @media (min-width: 768px) {
@@ -282,4 +339,15 @@ p{
         padding: 8rem 6rem 4rem 6rem;
     }
 
+}
+/* fim do 768 */
+
+@media (min-width: 992px) {
+    .projeto-card {
+        flex-direction: row;
+    }
+
+    .card-cover {
+        width: 55%;
+    }
 }
