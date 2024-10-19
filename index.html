@@ -11,6 +11,10 @@
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -80,7 +84,7 @@
             <li class="menu-item"> 
                 <a href="" class="menu-link active">
                     <i class="menu-icon bi-person"> </i>
-                    <span class="menu-text"> Sobre </span>
+                    <span class="menu-text"> Sobre Mim </span>
                 </a>
             </li>
             
@@ -143,9 +147,9 @@
 
     <section id="projetos" class="projetos">
 
-        <h2> Projetos </h2>
+        <h2 data-aos="zoom-in-down" data-aos-delay="200"> Projetos </h2>
         
-        <div class="projetos-container"> 
+        <div class="projetos-container" data-aos="zoom-in-down" data-aos-delay="1000" > 
 
             <div class="projeto-card">   <!-- proj. 01 -->
 
@@ -205,7 +209,7 @@
             </div> <!--  fim do proj. 01  -->
 
             
-            <div class="projeto-card">   <!-- proj. 02 -->
+            <div class="projeto-card card-reverse">   <!-- proj. 02 -->
 
                 <img src="img/projetos/josisbox.jpg"  alt=""  class="card-cover">
 
@@ -260,6 +264,65 @@
             
             </div> <!--  fim do proj. 02  -->
 
+            
+            <div class="projeto-card">   <!-- proj. 03 -->
+
+                <img src="img/projetos/portfolio.PNG"  alt=""  class="card-cover">
+
+                <div class="card-body"> 
+                    
+                    <h3 class="card-title">  Projeto Gustavo </h3>
+
+                    <p class="card-descricao"> Soluções em Porjetos Digitais </p>
+
+                    <ul class="card-lista">
+                        <li class="card-iten">
+                            <i class="bi bi-check-all"></i>
+                            Design de Produtos 
+
+                        </li>
+
+                        <li class="card-iten">
+                            <i class="bi bi-check-all"></i>
+                            Design de Logotipos
+                            
+                        </li>
+
+                        <li class="card-iten">
+                            <i class="bi bi-check-all"></i>
+                            Design em geral
+                            
+                        </li>
+                    
+                    </ul>
+
+                    <div class="card-button"> 
+
+                        <button class="btn btn-primary">
+                            
+                            <a href="https://store.steampowered.com/?l=portuguese" target="_blank">
+                                <span> Ver Designs </span>
+                                <i class="bi bi-arrow-up-right"> </i>
+                            </a>
+
+                        </button>
+
+                        <button class="btn">
+                            <a href="https://github.com/progdutra23" target="_blank">
+                                <span> Repositório</span>
+
+                            </a>
+
+
+                        </button>
+
+                    </div>  <!-- fim card-button -->
+
+                </div> <!-- fim do card body -->
+            
+            </div> <!--  fim do proj. 03  -->
+
+
         </div>   <!-- Fim do Projeto container  -->
 
 
@@ -277,6 +340,11 @@
 
     </section>
 
+
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/script.js"></script>
 

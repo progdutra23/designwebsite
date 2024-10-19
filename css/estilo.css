@@ -132,6 +132,7 @@ p{
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid #ff7214;
+    z-index: 99999;
 }
 
 .menu-mobile .menu-link{
@@ -193,7 +194,7 @@ p{
 }
 
 .btn:hover  {
-    transform: scale(1.5);
+    transform: scale(1.03);
     transition: ease-in-out .1s; /* transição do botão projetos */
 }
 
@@ -345,6 +346,11 @@ p{
 @media (min-width: 992px) {
     .projeto-card {
         flex-direction: row;
+    }
+
+    .card-reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .card-cover {
