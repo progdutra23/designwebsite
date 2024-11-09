@@ -8,6 +8,7 @@
       --icone-tema: orange; /* cor unica do icone de tema */
       --color-title: #ff7214; /* cor do titulo */
       --border-color: #fcfcfc ;  /*   cor da borda  */
+      --border: #fcfcfc;
 
 }
 
@@ -15,6 +16,7 @@
       --primary-bg: #fcfcfc; /* bg background */ 
       --primary-color: #0a0a0a; /* cor do texto */
       --houver-menu: #fcfcfc;  /* coro dos menus  */
+      --border: #0a0a0a;
 }
 
 /* css geral */
@@ -27,7 +29,7 @@ body {
 }
 
 html[data-theme="light"] .logo  {
-    filter: invert(1);
+    filter: invert(0);
 }
 
 a{
@@ -44,7 +46,7 @@ i{
 }
 
 b{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h1{ font-family: "Rubik", sans-serif;
@@ -83,8 +85,8 @@ p{
 /* header */
 #header {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;  /* Coloca o conteúdo em linha e permite a quebra de linha. */
+    justify-content: space-between;   /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
     align-items: center;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -306,6 +308,12 @@ p{
 
 }
 
+.projetos .btn {
+    width: auto;
+    margin: auto;
+}
+
+
   /* sobre  */
 
   .sobre {
@@ -408,6 +416,31 @@ p{
 }
 
 
+  /* - - - - Contato - - - - */
+
+  .contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border);         /* variavel da borda */
+    border-bottom: 1px solid var(--border);   /* variavel da borda */
+  }
+
+  .contato p {
+    text-align: center;
+  }
+
+  .contato .btn{
+    width: auto;   /* correção */
+  }
+
+  .contato .email{
+    text-transform: uppercase;
+  }
+
+
 
 /*Responsividade /* Responsivo */
 
@@ -441,38 +474,16 @@ p{
         font-size: 3rem;
     }
 
-    #home, .projetos, .sobre, .contato {
+    #home, .projetos, .sobre  {
         padding: 8rem 6rem 4rem 6rem;
     }
-    .contato{
+    .contato {
         padding: 6rem;
+
     }
 
 }
 
-  /* - - - - Contato - - - - */
-
-  .contato{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    border-top: 1px solid var(--primary-bg);         /* variavel da borda */
-    border-bottom: 1px solid var(--primary-color);   /* variavel da borda */
-  }
-
-  .contato p {
-    text-align: center;
-  }
-
-  .contato .btn{
-    width: auto;   /* correção */
-  }
-
-  .contato .email{
-    text-transform: uppercase;
-  }
 
 
 /* fim do 768 */
