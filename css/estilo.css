@@ -323,12 +323,12 @@ p{
   }
 
   .sobre-logo {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
-    border-radius: 50rem;
-    border: 8px solid var( --primary-color)
+    border-radius: 90rem;
+    border: 6px solid var( --primary-color)
 
   }
 
@@ -375,7 +375,7 @@ p{
     gap: .5rem;
 }
 
-.accordion-header { 
+.accordion-header1 { 
     width: 100%;
     display: flex;
     padding: 0.75rem 1rem;
@@ -388,12 +388,12 @@ p{
     transition: ease-in-out .3s;
 }
 
-.accordion-header span {
+.accordion-header1 span {
     color: var(--primary-color)
 }
 
 /* esconder as respostas */
-.accordion-body {  
+.accordion-body1 {  
     display: none;
     padding: 1.25rem;
     flex-direction: column;
@@ -402,12 +402,12 @@ p{
     border: 1px solid var(--primary-color);
 }
 
-.accordion-item.active .accordion-header {
+.accordion-item.active .accordion-header1 {
     background: var(--body-accordion);
 }
 
 /* conteudo aparece após o click */
-.accordion-item.active .accordion-body {
+.accordion-item.active .accordion-body1 {
     display: flex;
 }
 
