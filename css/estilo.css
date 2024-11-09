@@ -206,11 +206,11 @@ p{
     text-transform: uppercase;
 }
 
-.btn-primary span  {
+.btn-primaria span  {
     color: var(--primary-color);
 }
 
-.btn-primary  {
+.btn-primaria  {
     border: 1.5px solid var(--houver-menu)
 }
 
@@ -440,6 +440,20 @@ p{
     text-transform: uppercase;
   }
 
+  /* Roda pé ==== footer */
+  footer {
+    margin-bottom: 5rem;
+  }
+
+  footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  footer a {
+    color: #ff7214;
+  }
 
 
 /*Responsividade /* Responsivo */
